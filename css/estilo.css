@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: #365453;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+#home .container, #about .container, #contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+#home, #about, #contact {
+    height: 100vh;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.container {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text, .image {
+    flex: 1;
+    text-align: center;
+    margin: 16px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #457574;
+}
+
+p {
+    font-size: 18px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #457574;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Estilos específicos para a página de projetos */
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* ou auto, dependendo do que você precisa */
+    padding-top: 50px; /* Ajuste conforme necessário */
+    margin-bottom: 100px; /* Ajuste conforme necessário */
+    overflow: auto; /* Adicionado para tornar o conteúdo rolável se ultrapassar o espaço disponível */
+    
+}
+
+.projects-page h1 {
+    text-align: center; /* Adicionado para centralizar o texto "Alguns Projetos" */
+    margin-top: 20px; /* Adicionado para garantir que o texto não fique de fora da tela */
+}
+
+.projects-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.projects-page .projects-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    
+}
+
+.projects-page .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    max-width: 300px;
+    flex: 0 1 auto;
+    
+}
+
+.projects-page .project img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 800px; 
+    object-fit: contain;
+    height: auto;
+}
+
+.projects-page .project h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #457574;
+}
+
+.projects-page .project p {
+    font-size: 16px;
+    overflow-wrap: break-word;;
+    text-align: center;
+
+}
+
+.projects-page .project a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #365453;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    margin: 8px 0;
+    border: 1px solid #000;
+}
+
+button {
+    padding: 16px 32px;
+    margin-top: 16px;
+    background-color: #365453;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #457574;
+}
